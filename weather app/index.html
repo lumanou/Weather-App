@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJPsnVMPCKdpJCQdhzXgkBqCWPZbWKbkpjdfvNfDLzcSqZZMWcKHBZPkLhXbvWlqrkQv" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/contact-card.png" alt="Contact Icon" class="icon"/> Contact
+                </a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/services.png" alt="Services Icon" class="icon"/> Services
+                </a>
+            </li>
+            <li>
+                <a href="https://www.google.com/maps/place/%D0%9D%D0%BE%D0%B2%D0%B8+%D0%A1%D0%B0%D0%B4/@45.2714218,19.7670401,12z/data=!3m1!4b1!4m6!3m5!1s0x475b10613de93455:0xb6f7d683724fe28!8m2!3d45.2396085!4d19.8227056!16zL20vMHN3d24?entry=ttu" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/map-pin.png" alt="Based In Icon" class="icon"/> Based In 
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h1>Weather App<span class="blinking-dot"></span></h1>
+        <div class="input-box">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="weather-info" class="hidden">
+            <h2 id="city-name"></h2>
+            <div class="weather-details">
+                <div class="weather-box">
+                    <p id="temperature"></p>
+                </div>
+                <div class="weather-box">
+                    <p id="description"></p>
+                </div>
+                <div class="weather-box">
+                    <p id="humidity"></p>
+                </div>
+            </div>
+        </div>
+        <p id="error-message" class="hidden"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

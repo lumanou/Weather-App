@@ -1,0 +1,145 @@
+/* Import Raleway and Space Mono fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background: #20948B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Sidebar styles */
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 130px;
+    height: 100%; /* Full height */
+    background-color: #167081;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between the contact and services */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Contact at the top, Services at the bottom */
+    padding-top: 10px; /* Padding at the top for spacing */
+    padding-bottom: 50px; /* Padding at the bottom for equal spacing */
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a .icon {
+    width: 24px; /* Icon size */
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-left: 220px; /* Adjusted for sidebar */
+    width: calc(100% --);
+}
+
+
+h1 {
+    font-family: 'Raleway', sans-serif; /* Set font to Raleway */
+    font-weight: bold;
+    font-size: 36px; /* Adjust the title size if needed */
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#city-name {
+    font-size: 32px; /* Increase the city name font size */
+    font-family: 'Raleway', sans-serif;
+}
+
+.input-box {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #1995AD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Space Mono', monospace; /* Set font to Space Mono */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.weather-box {
+    background-color: #1995AD; /* Soft blue color */
+    border-radius: 10px; /* Curved edges */
+    padding: 15px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Set text color to white */
+    font-family: 'Space Mono', monospace; /* Set font to Space Mono */
+}
+
+#weather-info {
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-message {
+    color: red;
+    margin-top: 40px;
+    font-weight: bold;
+}
